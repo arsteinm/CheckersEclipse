@@ -370,7 +370,7 @@ public class CheckerMove {
                 return false;
         } 
 
-        private static boolean isEmpty(int[][] board, int i, int j)
+        protected static boolean isEmpty(int[][] board, int i, int j)
         {
                 if (i>-1 && i<8 && j>-1 && j<8)
                         if (board[i][j] == Checkers.empty)
@@ -394,7 +394,7 @@ public class CheckerMove {
 		}
 
 		// checkers that i and j are between 0 and 7 inclusive
-        private static boolean inRange(int i, int j)
+        protected static boolean inRange(int i, int j)
 		{
 			return (i>-1 && i<8 && j>-1 && j<8);
 		}
@@ -477,7 +477,7 @@ public class CheckerMove {
 //for an initial capture represented by move, sees if there are more captures
 //until there is none.  If there are multiple capture configurations,
 //add all of them to moves_list
-    private static void forceCaptures(int[][] board, int[] move, Vector moves_list,int inc){
+    protected static void forceCaptures(int[][] board, int[] move, Vector moves_list,int inc){
      int newx = move[2], newy = move[3];
 
      while (newx>7 || newy>7){

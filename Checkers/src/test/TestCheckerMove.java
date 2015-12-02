@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class testCheckerMove {
+public class TestCheckerMove {
 
 	@Before
 	public void setUp() throws Exception {
@@ -42,12 +42,17 @@ public class testCheckerMove {
 	}
 
 	@Test
-	public void testCanCaptureIntArrayArrayIntInt() {
+	public void testCanWalk() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testCanWalk() {
+	public void testIsEmpty() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testInRange() {
 		fail("Not yet implemented");
 	}
 
@@ -58,6 +63,11 @@ public class testCheckerMove {
 
 	@Test
 	public void testMoveComputer() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testForceCaptures() {
 		fail("Not yet implemented");
 	}
 

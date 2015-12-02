@@ -8,6 +8,7 @@ import org.junit.Test;
 
 public class TestCheckers {
 
+	
 	@Before
 	public void setUp() throws Exception {
 	}

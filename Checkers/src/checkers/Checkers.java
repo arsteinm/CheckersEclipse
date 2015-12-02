@@ -543,7 +543,7 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
     public void mouseExited(MouseEvent e) {
     }
 
-    private void showStatus() {       //prints msgs to the statuss bar
+    protected void showStatus() {       //prints msgs to the statuss bar
         if (this.toMove == redNormal){
             msg.setText("Red to move");
         }
