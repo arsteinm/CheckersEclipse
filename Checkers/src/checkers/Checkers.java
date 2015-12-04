@@ -478,7 +478,25 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
 			else
 				loser = yellowNormal;
 		}
-
+		
+		//counts the pieces left on the board
+		int redPiecesLeft = 0;
+		int yellowPiecesLeft = 0;
+		for (int i = 0; i < board.length; i++){
+			for (int j = 0; j < board.length; j++){
+				if (board[i][j] == redNormal){
+					redPiecesLeft++;
+				}else if(board[i][j] == redKing){
+					redPiecesLeft++;
+				}else if(board[i][j] == yellowNormal){
+					yellowPiecesLeft++;
+				}else if(board[i][j] == yellowKing){
+					yellowPiecesLeft++;
+				}
+			}
+		}
+		redTotal.setText(""+ redPiecesLeft);
+		yellowTotal.setText("" + yellowPiecesLeft);
         showStatus();
 	}
 

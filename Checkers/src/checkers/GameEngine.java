@@ -1,5 +1,6 @@
 package checkers;
      
+import java.nio.channels.ReadPendingException;
 import java.util.Vector;
 //game tree implementation
 public class GameEngine {
@@ -41,7 +42,7 @@ Weight of checkers
                 }
 
                 else if (board[i][j] ==Checkers.redKing){
-                    score-=king;
+                	score-=king;
                     if (i==0 || i==7)
                         score += edge;
                     if (j==0 || j==7)
@@ -50,12 +51,12 @@ Weight of checkers
 
                 else if (board[i][j] == Checkers.yellowNormal)
                 {
-                      score+=normal;
+                	score+=normal;
                       score+=pos*(7-j)*(7-j);
                 }
 
                 else if (board[i][j] == Checkers.yellowKing){
-                    score+=king;
+                	score+=king;
                     if (i==0 || i==7)
                         score -= edge;
                     if (j==0 || j==7)
