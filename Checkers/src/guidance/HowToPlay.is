@@ -1,0 +1,17 @@
+How to Play IntelliChecker
+
+How to Start a Game of Checkers:
+1. First select the game mode, 1-player or 2-player. If 1-player is selected, then proceed to select difficulty level of the computer.
+2. To start a new game, select New Game. 
+
+Rules of Checkers:
+1. The gameboard consists of 64 squares alternating between 32 dark and 32 light squares. Each player begins with 12 checker pieces on the 12 closest light squares to him or her. 
+2. Yellow is to move first to start the game, and then players alternate taking turns. 
+3. Moves are allowed only on light squares, so pieces must always move diagonally. 
+4. Each piece initially starts out as a "man," valid movement only being towards the opponent in a forward direction. Once a man reaches the opponents side, the piece then becomes a "king" allowing movements to be made forward or backwards. 
+5. A piece making a non-capturing move (not involving a jump) may move only one square every turn. 
+6. A piece making a capturing move (a.k.a. a jump) leaps over one of the opponents pieces, landing in a straight diagonal line on the other side. Only one piece may be captured in a single jump. However, multiple jumps are allowed on a single turn.
+7. When a piece is captured, it is removed from the board. 
+8. If a player is able to make a capture, the player has no choice but to capture the opponent's piece. If more than one capture is available, the player is free to choose whichever he or she prefers. 
+9. A king may combine jumps in several directions going forward or backwards on the same turn. Man pieces are allowed to shift directions when combining jumps, however can only be achieved in the forward direction.
+10. A player wins the game when the opponent cannot make a move. This can occur when the all of the opponent's pieces have been captured or all of his pieces are blocked in. 

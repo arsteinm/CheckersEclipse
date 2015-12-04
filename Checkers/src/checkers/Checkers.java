@@ -32,6 +32,12 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
 
     Help hp=new Help();
 
+    JLabel piecesLeft= new JLabel("Pieces Left:");
+    JLabel redPieces= new JLabel("Red: ");
+    JLabel yellowPieces = new JLabel("Yellow: ");
+    JLabel redTotal = new JLabel ("12");
+    JLabel yellowTotal = new JLabel("12");
+    		
     JLabel mode=new JLabel("Mode");
     JLabel col=new JLabel("Colour");
     JLabel diff=new JLabel("Difficulty Level");
@@ -110,7 +116,12 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
         unB.setFont(new Font("SansSerif",Font.BOLD,11));
         hlpB.setFont(new Font("SansSerif",Font.PLAIN,11));
         snB.setFont(new Font("SansSerif",Font.PLAIN,11));
-        msg.setFont(new Font("SansSerif",Font.PLAIN,11)); 
+        msg.setFont(new Font("SansSerif",Font.PLAIN,11));
+        piecesLeft.setFont(new Font("SansSerif",Font.PLAIN,11));
+        redPieces.setFont(new Font("SansSerif",Font.PLAIN,11));
+        yellowPieces.setFont(new Font("SansSerif",Font.PLAIN,11));
+        redTotal.setFont(new Font("SansSerif",Font.PLAIN,11));
+        yellowTotal.setFont(new Font("SansSerif",Font.PLAIN,11));
 
         nwB.setCursor(new Cursor(Cursor.HAND_CURSOR));
         unB.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -128,6 +139,8 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
         this.add(hlpB);
         snB.setBounds(460,10,25,25);
         this.add(snB);
+        
+
 
         mode.setBounds(420,260,80,25);
         this.add(mode);
@@ -182,7 +195,7 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
         this.add(rp);
         rpt.setBounds(60, 450, 60, 20);
         this.add(rpt);
-
+        
         bp.setBounds(110, 440, 50, 50);
         bp.setIcon(yellowN);
         this.add(bp);
@@ -290,6 +303,16 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
         //If someone wants to move secondly, red has to be selected
         //Yellow is always at the bottom of the board
 
+        piecesLeft.setBounds(415, 350, 100,25);
+        this.add(piecesLeft);
+        redPieces.setBounds(415, 370,50,25);
+        this.add(redPieces);
+        yellowPieces.setBounds(415,390,50,25);
+        this.add(yellowPieces);
+        redTotal.setBounds(470, 370, 25, 25);
+        this.add(redTotal);
+        yellowTotal.setBounds(470,390,25,25);
+        this.add(yellowTotal);
         selectedColor= c1.isSelected() ? "red" : "yellow";
         selectedMode=p1.isSelected()?1:2;
         difficulty=level.getSelectedIndex();
